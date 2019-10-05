@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.square{
+  display: flex;
+  height:20px;
+  border: 1px;
+  margin-right: 10px;
+  border-style: solid;
+  color: black;
+  align-items: center;
+    justify-content: space-between;
+}
+
+.circle{
+  width:20;
+  height:20;
+  border: 1px;
+  margin: 5px;
+  border-style: solid;
+}

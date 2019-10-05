@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>FetchList Program</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="javascript/javascript.js"></script>
+  <link href="style/style.css" rel="stylesheet" />
+</head>
+
+<body >
+  <form id="form">
+      <input id="searchContent" />
+      <button onclick="searchClients(); return false" id="perform-search">Search Clients</button>
+      <div class='container'>
+        <div id="searchData"></div>
+      </div>
+  </form>
+
+  <button onclick="getData(); return false"  id="retrieve-resources">Retrieve List</button>
+  <div class='container'>
+    <div id="data"></div>
+  </div>
+
+</body>
+
+</html>

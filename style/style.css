@@ -21,3 +21,15 @@
   margin: 5px;
   border-style: solid;
 }
+#mytable,td{
+    border:1px solid blue;
+}
+.col-8{
+background-color: #add8e6;
+
+}
+
+.col-2{
+background-color: #add8e6;
+
+}

@@ -2,34 +2,53 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <title>FetchList Program</title>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="javascript/javascript.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="style/style.css" rel="stylesheet" />
 </head>
 
 <body >
+
+  <div class = "container">
+  	<div class = "row">
+  	<div class="col-lg-2 col-md-2 col-sm-2 col-2"></div>
+
+		<div class="col-lg-8 col-md-8 col-sm-8 col-8">
+
+
+
+
   <form id="form">
       <input id="searchContent" />
       <button onclick="searchClients(); return false" id="perform-search">Search Clients</button>
+</br>
+      <span>Clients count:<pre id="searchCount"></pre></span>
+
       <div class='container'>
-        <div id="searchData"></div>
+
+      <span>Clients details:<pre id="searchData"></pre></span>
       </div>
   </form>
   <pre>
   <code>
 
-
-
 </pre>
 </code>
 
-  <button onclick="getData(); return false"  id="retrieve-resources">Retrieve List</button>
+
   <div class='container'>
     <div id="data"></div>
   </div>
-
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-2"></div>
+</div>
+</div>
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="javascript/javascript.js"></script>
+
 
 </html>

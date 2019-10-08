@@ -78,14 +78,14 @@ function searchClients(){
             for (var i=0 ; i < obj._embedded.clients.length ; i++)
             {
 
-            if (obj._embedded.clients[i]["gender"] == searchContent) {
+            if (obj._embedded.clients[i]["email"] == searchContent) {
             results.push(obj._embedded.clients[i]);
 
 
 
             console.log("Match1");
 
-          }else if (obj._embedded.clients[i]["email"] == searchContent){
+          }else if (obj._embedded.clients[i]["mobile"] == searchContent){
 
 
             results.push(obj._embedded.clients[i]);

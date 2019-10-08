@@ -61,23 +61,42 @@ function searchClients(){
             var jClients = JSON.parse(objStringified);
 
 
+            document.getElementById("searchCount").innerHTML = obj._embedded.clients.length;
+            document.getElementById("searchData").innerHTML = objStringified;
 
+
+
+
+            //console.log(objStringified);
 
 
 // Working Search!!!!!!! Matches with
 
-            console.log(searchContent);
+            //console.log(searchContent);
             var results = [{}];
             var searchVal = "uInput";
             for (var i=0 ; i < obj._embedded.clients.length ; i++)
             {
-              console.log("CONOR!!!!!!");
-            if (obj._embedded.clients[i]["firstName"] == searchContent) {
+
+            if (obj._embedded.clients[i]["gender"] == searchContent) {
             results.push(obj._embedded.clients[i]);
-            console.log("KEVIN!!!!!!!");
 
 
 
+            console.log("Match1");
+
+          }else if (obj._embedded.clients[i]["email"] == searchContent){
+
+
+            results.push(obj._embedded.clients[i]);
+
+
+
+            console.log("Match2");
+
+          }else{
+
+            return;
           }
 }
 
@@ -179,14 +198,7 @@ function searchClients(){
 
 
 
-            // document.getElementById("searchCount").innerHTML = obj._embedded.clients.length;
-            // document.getElementById("searchData").innerHTML = objStringified;
-            //
-            //
-            //
-            // console.log(jClients);
-            // console.log(client1id);
-            // console.log(objStringified);
+
 
 
 
